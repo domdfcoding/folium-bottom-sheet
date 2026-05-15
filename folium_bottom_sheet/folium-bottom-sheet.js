@@ -191,15 +191,19 @@
   function setupBottomSheet() {
     s();
   }
-  var bottomSheetContent;
-  function setbottomSheet(content) {
-    bottomSheetContent.innerHTML = `<!-- Snap points -->
+  function setBottomSheetContent(content) {
+    document.getElementById("bottomSheetContent").innerHTML = `<!-- Snap points -->
 		<div slot="snap" style="--snap: 75%" class="top"></div>
 		<div slot="snap" style="--snap: 50%"></div>
 		<div slot="snap" style="--snap: 25%" class="initial"></div>
 		${content}
 		`;
   }
+  function getBottomSheetDialog() {
+    return document.getElementById("bottomSheetDialog");
+  }
   L.setupBottomSheet = setupBottomSheet;
+  L.setBottomSheetContent = setBottomSheetContent;
+  L.getBottomSheetDialog = getBottomSheetDialog;
 })();
 //# sourceMappingURL=folium-bottom-sheet.js.map

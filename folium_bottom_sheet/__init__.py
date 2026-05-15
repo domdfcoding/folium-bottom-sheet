@@ -28,13 +28,29 @@ Adds a toggleable panel to the bottom of the screen, such as to display marker i
 
 # 3rd party
 import folium
+from folium.elements import JSCSSMixin
 from folium.template import Template
 
+__author__: str = "Dominic Davis-Foster"
+__copyright__: str = "2026 Dominic Davis-Foster"
+__license__: str = "MIT License"
+__version__: str = "0.0.0"
+__email__: str = "dominic@davis-foster.co.uk"
 
-class BottomSheetDialog(folium.MacroElement):
+__all__ = ["BottomSheetDialog"]
+
+
+class BottomSheetDialog(JSCSSMixin, folium.MacroElement):
 	"""
 	Adds a toggleable panel to the bottom of the screen, such as to display marker information like a popup.
 	"""
+
+	default_js = [
+			(
+					"folium-bottom-sheet-js",
+					f"https://cdn.jsdelivr.net/gh/domdfcoding/folium-bottom-sheet@v{__version__}/folium_bottom_sheet/folium-bottom-sheet.min.js",
+					),
+			]
 
 	_template = Template(
 			"""
@@ -48,7 +64,7 @@ class BottomSheetDialog(folium.MacroElement):
 
 		{% endmacro %}
 		{% macro script(this, kwargs) %}
-			setupBottomSheet();			
+			L.setupBottomSheet();
 		{% endmacro %}
 
     """,
