@@ -56,7 +56,7 @@ class BottomSheetDialog(JSCSSMixin, folium.MacroElement):
 			"""
 		{% macro html(this, kwargs) %}
 			<bottom-sheet-dialog-manager>
-				<dialog id="bottomSheetDialog">
+				<dialog id="bottomSheetDialog" class="bottom-sheet-dialog">
 					<bottom-sheet expand-to-scroll nested-scroll swipe-to-dismiss tabindex="0" id="bottomSheetContent">
 					</bottom-sheet>
 				</dialog>
