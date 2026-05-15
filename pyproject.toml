@@ -4,7 +4,7 @@ build-backend = "whey"
 
 [project]
 name = "folium-bottom-sheet"
-version = "0.0.0"
+version = "0.1.0b1"
 description = "Adds a toggleable panel to the bottom of the screen, such as to display marker information like a popup."
 readme = "README.rst"
 keywords = []
