@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "outDir": "./folium_bottom_sheet/",
+    "allowJs": true,
+    "target": "es2020",
+    "module": "es2020",
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "useUnknownInCatchVariables": true,
+    "strict": true,
+    "exactOptionalPropertyTypes": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowUnreachableCode": false,
+    "allowUmdGlobalAccess": true,
+    "skipLibCheck": true,
+    "types": [
+      "leaflet",
+      "leaflet-geosearch"
+    ]
+  },
+  "include": [
+    "./src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "noEmit": true,
+  "noEmitOnError": false
+}
