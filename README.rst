@@ -59,7 +59,7 @@ folium-bottom-sheet
 .. |language| image:: https://img.shields.io/github/languages/top/domdfcoding/folium-bottom-sheet
 	:alt: GitHub top language
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/domdfcoding/folium-bottom-sheet/v0.1.0b1
+.. |commits-since| image:: https://img.shields.io/github/commits-since/domdfcoding/folium-bottom-sheet/v0.1.0b2
 	:target: https://github.com/domdfcoding/folium-bottom-sheet/pulse
 	:alt: GitHub commits since tagged version
 
